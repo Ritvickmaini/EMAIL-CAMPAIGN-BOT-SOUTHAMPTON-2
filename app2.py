@@ -138,7 +138,7 @@ def save_to_sent_folder(raw_msg):
 def send_email(recipient, first_name, subject, html_body):
     """Send personalized email and save to Sent folder"""
     msg = MIMEMultipart("alternative")
-    msg["From"] = formataddr(("Mike Randell", SENDER_EMAIL))
+    msg["From"] = formataddr(("Mark Randell", SENDER_EMAIL))
     msg["To"] = recipient
     msg["Subject"] = subject
 
